@@ -1,0 +1,7 @@
+{
+	"title": "Map of Quebec cities", 
+	"lang": "Français", 
+	"inputLabel": "Enter the name of the city of Quebec in French (or \"Latitude; Longitude\"):", 
+	"selected": "You selected the city:", 
+	"slider": "Chose your zoom level:"
+}

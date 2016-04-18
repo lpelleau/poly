@@ -1,0 +1,15 @@
+{ "Navigation":[ 
+    {"Nom": "Accueil", "Lien": "http://www.groupes.polymtl.ca/log2420/index.php", "Niveau":0},
+    {"Nom": "Séances", "Lien": "http://www.groupes.polymtl.ca/log2420/Seances/20161/index.php", "Niveau":0},
+    {"Nom": "Plan", "Lien": 0, "Niveau":0},
+    {"Nom": "Description", "Lien":"http://www.groupes.polymtl.ca/log2420/Plan/planLog2420.php", "Niveau":0},
+    {"Nom": "Évaluation", "Lien":"http://www.groupes.polymtl.ca/log2420/Plan/planLog2420.php#eval", "Niveau":1},
+    {"Nom": "Ressources", "Lien": 0, "Niveau":0},
+    {"Nom": "Recueil d'examens", "Lien": "http://www.groupes.polymtl.ca/log2420/Eval/index.php", "Niveau":0},
+    {"Nom": "Les TP", "Lien": 0, "Niveau":0},
+    {"Nom": "Descriptions", "Lien":"http://www.groupes.polymtl.ca/log2420/Tp/20161/tp.php", "Niveau":0},
+    {"Nom": "Les TD", "Lien": 0, "Niveau":0},
+    {"Nom": "Desc. TD1", "Lien":"http://www.groupes.polymtl.ca/log2420/Lab/Web-ng+jq/index.php", "Niveau":0},
+    {"Nom": "Desc. TD2", "Lien":"http://www.groupes.polymtl.ca/log2420/Lab/ConcurrenceWebtd2.php", "Niveau":0},
+    {"Nom": "Desc. TD3", "Lien":"http://www.groupes.polymtl.ca/log2420/Web-td3/index.php", "Niveau":0}
+] }

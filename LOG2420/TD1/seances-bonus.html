@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="fr" ng-app="app">
+  <head>
+    <title>LOG2420 - Détails des séances</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Content-Language" content="fr-ca" />
+    <link rel="icon" href="img/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css" />
+    <!-- https://bootswatch.com/flatly/ -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+    <script src="seances.js"></script>
+    <!-- Not in seances.css to not disturb seances.html comportment -->
+    <style>
+      body {
+        padding-top: 70px;
+      }
+    </style>
+  </head>
+
+  <body id="top">
+    <div class="navbar navbar-default navbar-fixed-top" ng-controller="MenuController">
+      <div class="container">
+        <div class="navbar-header">
+          <a href="{{ items[0].Lien }}" class="navbar-brand">{{ items[0].Nom }}</a>
+          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="navbar-collapse collapse" id="navbar-main">
+          <ul class="nav navbar-nav">
+            <!-- First element chifted and displayed in navbar-header -->
+            <li ng-repeat="item in items2" class="dropdown" ng-attr-class="{{ item.Nom == 'Séances' && 'active' }}">
+              <a ng-attr-class="{{ subitems2[item.Nom] != null && 'dropdown-toggle' }}" ng-attr-data-toggle="{{ subitems2[item.Nom] != null && 'dropdown' }}" href="{{ item.Lien }}">
+                {{ item.Nom }}
+                <span ng-show="{{ subitems2[item.Nom] != null }}" class="caret"></span>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="themes" ng-show="{{ subitems2[item.Nom] != null }}">
+                <li ng-repeat="subitem in subitems2[item.Nom]">
+                  <a href="{{ subitem.Lien }}">
+                    <span ng-show="{{ subitem.Niveau == 1 }}">&nbsp;&nbsp;&nbsp;</span>
+                    {{ subitem.Nom }}
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="http://www.polymtl.ca/" target="_blank">Polytechnique Montréal</a></li>
+            <li class="hidden-sm"><a href="http://www.groupes.polymtl.ca/log2420/Seances/20161/index.php?&formatimp=o">Format d'impression</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container" ng-controller="SeancesController">
+      <div class="row text-center">
+        <div>
+          <h1>LOG2420, Analyse et conception d'interfaces utilisateur</h1>
+          <h2>Hiver 2016</h2>
+        </div>
+        <div class="col-md-offset-3 col-md-6 col-sm-offset-2 col-sm-8">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">Détails des séances</h3>
+            </div>
+
+            <div class="panel-body">
+              <p>Version pour les chargés de cours.</p>
+              <p><strong>Attention: cette page et son contenu seront modifiés en cours de trimestre selon les besoins. Attendez à la semaine correspondante pour imprimer les transparents!</strong></p>
+              <p>Le détail de chaque séance (au nombre de {{ seances.length - 1 }}) de cours est fourni semaine par semaine.</p>
+              <p class="text-right visible-sm"><a href="http://www.groupes.polymtl.ca/log2420/Seances/20161/index.php?&formatimp=o">Format d'impression</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Nav tabs -->
+      <ul class="nav nav-tabs" role="tablist">
+        <li role="presentation" ng-repeat="seance in seances" ng-class="{ active:$first }">
+          <a href="#{{ $index + 1 }}" aria-controls="{{ $index + 1 }}" role="tab" data-toggle="tab">
+            <!--Séance du --><span ng-bind-html="seance.date"></span>
+          </a>
+        </li>
+      </ul>
+
+      <!-- Tab panes -->
+      <div class="row">
+        <div class="col-md-offset-1 col-md-10">
+          <div class="tab-content">
+            <div role="tabpanel" class="tab-pane fade" ng-repeat="seance in seances" ng-init="nolessons = seance.transparents == '' && true || false" ng-class="{ 'in active':$first }" id="{{ $index + 1 }}">
+              <h3>Séance du <span class="label label-default" ng-bind-html="seance.date"></span></h3>
+              <br />
+
+              <div ng-show="{{ nolessons }}" class="text-center">
+                <h4><span class="label label-success" ng-bind-html="seance.documents"></span></h4>
+              </div>
+
+              <div ng-show="{{ !nolessons }}">
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h3 class="panel-title">Transparents</h3>
+                  </div>
+                  <div class="panel-body" ng-bind-html="seance.transparents"></div>
+                </div>
+
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h3 class="panel-title">Documents</h3>
+                  </div>
+                  <div class="panel-body" ng-bind-html="seance.documents"></div>
+                </div>
+
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h3 class="panel-title">Évaluation</h3>
+                  </div>
+                  <div class="panel-body" ng-bind-html="seance.evaluation"></div>
+                </div>
+
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h3 class="panel-title">Laboratoire</h3>
+                  </div>
+                  <div class="panel-body" ng-bind-html="seance.laboratoire"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="text-right">
+            <br />
+            <button class="btn btn-default" type="submit" id="totop">Haut</button>
+            <br /><br />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Not in seances.js to not disturb seances.html comportment -->
+    <!-- Scroll to top with smooth effect -->
+    <script>
+      $(document).ready(function(){
+        $('#totop').click(function(){
+        	$('html, body').animate({
+        		scrollTop: $('#top').offset().top
+        	}, 'slow');
+        	return false;
+        });
+      });
+    </script>
+  </body>
+</html>

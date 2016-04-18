@@ -1,0 +1,4 @@
+# Data columns: X Min 1stQuartile Median 3rdQuartile Max BoxWidth Titles PopulationSize
+1, 90841, 107519, 115114, 124512, 159215, 0.2, "s1", 112
+2, 86700, 114948, 124885, 138307, 186144, 0.2, "s2", 133
+3, 92284, 118311, 132990, 148287, 200553, 0.2, "s3", 366

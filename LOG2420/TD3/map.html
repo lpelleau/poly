@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		
+		<!-- Ceci permet d'inclure les fichiers CSS -->
+		<link href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<link href="styles.css" rel="stylesheet" type="text/css">
+		
+		<!-- Ceci permet d'inclure les fichiers JavaScript de jQuery, jQuery UI, Google Maps ainsi que map.js -->
+		<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+		<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+		<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="map.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<!-- Partie affichant la ville sélectionnée -->
+			<div id="selected">
+				<span tkey="selected"></span>
+				&nbsp;
+				<strong></strong>
+			</div>
+
+			<!-- Titre et saisie de la ville -->
+			<h1 tkey="title"></h1>
+			<p tkey="inputLabel"></p>
+			<input class="form-control" type="text" id="city"></input>
+		
+			<!-- Slider pour manier le zoom sur la page -->
+			<p tkey="slider"></p>
+			<div id="slider"></div>
+		
+			<!-- Choix de la langue -->
+			<div id="lang">
+				<button class="btn btn-default" tkey="lang"></button>
+			</div>
+		</div>
+
+		<br />
+
+		<!-- Google map -->
+		<div id="map"></div>
+
+		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjonwWBWoE1W6L8sU7KPl7zkRLSaPNC2o&callback=initMap"></script>
+	</body>
+</html>
+

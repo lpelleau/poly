@@ -1,0 +1,65 @@
+#
+# This is a hello world HOT template just defining a single compute
+# server.
+#
+heat_template_version: 2013-05-23
+
+description: >
+  INF4410 template part1
+parameters:
+  key_name:
+    type: string
+    description: Name of an existing key pair to use for the server
+    constraints:
+      - custom_constraint: nova.keypair
+  db_pass:
+    type: string
+    description: MySQL root password
+    hidden: true
+    constraints:
+      - length: { min: 6 }
+        description: Password length must be at least 6 characters
+
+resources:
+  server:
+    type: OS::Nova::Server
+    properties:
+      key_name: { get_param: key_name }
+      image: INF4410-Ubuntu-trusty-mini
+      flavor: INF4410-mini
+      networks: 
+        - network: reseau-pour-tous
+      user_data:
+        str_replace:
+          template: |
+            #!/bin/bash
+
+            export DEBIAN_FRONTEND="noninteractive"
+
+            PASS="db_pass"
+
+            sudo apt-get update
+            sudo apt-get install -y debconf-utils
+
+            sudo debconf-set-selections <<< "mysql-server mysql-server/root_password password $PASS"
+            sudo debconf-set-selections <<< "mysql-server mysql-server/root_password_again password $PASS"
+
+              
+            sudo debconf-set-selections <<< "phpmyadmin phpmyadmin/dbconfig-install boolean true"
+            sudo debconf-set-selections <<< "phpmyadmin phpmyadmin/app-password-confirm password $PASS"
+            sudo debconf-set-selections <<< "phpmyadmin phpmyadmin/mysql/admin-pass password $PASS"
+            sudo debconf-set-selections <<< "phpmyadmin phpmyadmin/mysql/app-pass password $PASS"
+            sudo debconf-set-selections <<< "phpmyadmin phpmyadmin/reconfigure-webserver multiselect apache2"
+
+            sudo apt-get install -y mysql-server mysql-client apache2  php5 libapache2-mod-php5 php5-mysql phpmyadmin
+
+            echo "Include /etc/phpmyadmin/apache.conf" | sudo tee --append /etc/apache2/apache2.conf
+            sudo service apache2 restart
+
+          params:
+            db_pass: { get_param: db_pass }
+
+outputs:
+  server_networks:
+    description: The networks of the deployed server
+    value: { get_attr: [server, networks] }

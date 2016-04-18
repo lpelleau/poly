@@ -1,0 +1,32 @@
+body {
+  margin-top: 70px;
+}
+
+#saisieText{
+  width: 100%;
+  height: 200px;
+  resize: none;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+#btnAnnuler {
+  width: 100%;
+}
+
+#btnCompter {
+  width: 100%;
+}
+
+#titrePB {
+  width: 100%;
+}
+
+.progress-bar {
+  width: 0%;
+}
+
+#textCompteur {
+  font-size: xx-large;
+}

@@ -1,0 +1,48 @@
+|__56 (black)
+
+|__56 (black)
+   |__null (black)
+   |__70 (red)
+
+|__56 (black)
+   |__39 (red)
+   |__70 (red)
+
+|__56 (black)
+   |__39 (black)
+   |   |__null (black)
+   |   |__55 (red)
+   |__70 (black)
+
+|__56 (black)
+   |__39 (black)
+   |   |__null (black)
+   |   |__55 (red)
+   |__70 (black)
+      |__65 (red)
+      |__null (black)
+
+|__56 (black)
+   |__39 (black)
+   |   |__null (black)
+   |   |__55 (red)
+   |__70 (black)
+      |__65 (red)
+      |__99 (red)
+
+|__56 (black)
+   |__41 (black)
+   |   |__39 (red)
+   |   |__55 (red)
+   |__70 (black)
+      |__65 (red)
+      |__99 (red)
+
+Recherche valeur 20 : Noeud introuvable.
+Recherche valeur 99 : Noeud trouvé.
+
+PreOrdre ( {56 (black)}, {41 (black)}, {39 (red)}, {55 (red)}, {70 (black)}, {65 (red)}, {99 (red)} )
+PostOrdre ( {39 (red)}, {55 (red)}, {41 (black)}, {65 (red)}, {99 (red)}, {70 (black)}, {56 (black)} )
+AscendingOrdre ( {39 (red)}, {41 (black)}, {55 (red)}, {56 (black)}, {65 (red)}, {70 (black)}, {99 (red)},  )
+DescendingOrdre ( {99 (red)}, {70 (black)}, {65 (red)}, {56 (black)}, {55 (red)}, {41 (black)}, {39 (red)},  )
+LevelOrdre ( {56 (black)}, {41 (black)}, {70 (black)}, {39 (red)}, {55 (red)}, {65 (red)}, {99 (red)} )

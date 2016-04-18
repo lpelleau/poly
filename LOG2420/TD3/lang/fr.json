@@ -1,0 +1,7 @@
+{
+	"title": "Carte des villes du Québec", 
+	"lang": "English", 
+	"inputLabel": "Saisir le nom de la ville du Québec en Français (ou \"Latitude; Longitude\") :", 
+	"selected": "Vous avez sélectionné la ville :", 
+	"slider": "Choisissez votre niveau de zoom :"
+}

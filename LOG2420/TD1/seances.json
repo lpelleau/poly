@@ -1,0 +1,113 @@
+[
+    {
+	"date" : " 7&nbsp;Jan",
+	"transparents" : " <ul> <li class='exam'><a href=&quot;http://www.groupes.polymtl.ca/log2420/Seances/Intro/intro-h.pdf&quot;>Introduction</a> (<a href=&quot;http://www.groupes.polymtl.ca/log2420/Seances/Intro/intro-b.pdf&quot;>texte</a>) </li></ul>",
+
+	"documents" : " <ul> <br><a href=&quot;http://www.groupes.polymtl.ca/log2420/Seances/Intro/quiz.php&quot;></a><li class='exam'><a href=&quot;http://www.groupes.polymtl.ca/log2420/Seances/Intro/quiz.php&quot;>Quiz de rappel</a> </li></ul> ",
+	"evaluations" : "&nbsp; ", "laboratoire" : " ( 8&nbsp;Jan.)<br> Labo 1 (B1)<br><br> "
+    },
+
+    {
+	"date" : " 14&nbsp;Jan",
+	"transparents" : " <ul> <li class='exam'><a href=&quot;http://www.groupes.polymtl.ca/log2420/Seances/Web/web-h.pdf&quot;>Interfaces Web</a><br> (<a href=&quot;http://www.groupes.polymtl.ca/log2420/Seances/Web/web-b.pdf&quot;>texte</a>)</li> <li class='exam'><a href=&quot;http://www.groupes.polymtl.ca/log2420/Seances/GUI/mvc-h.pdf&quot;>Modèle-vue-contrôleur</a></li> </ul><span class=&quot;mdc&quot;> </span>",
+	"documents" : " <ul> <li class='exam'>Exemples JavaScript&nbsp;: <ul> <li><a href=&quot;http://www.w3schools.com/js/tryit.asp?filename=tryjs_write&quot;>Fonction</a> </li><li><a href=&quot;http://www.w3schools.com/js/tryit.asp?filename=tryjs_function1&quot;>Événements</a> </li><li><a href=&quot;http://www.w3schools.com/js/tryit.asp?filename=tryjs_dom&quot;>DOM</a> </li><li><a href=&quot;http://www.w3schools.com/Ajax/tryit.asp?filename=tryajax_get&quot;>Ajax</a> </li></ul> </li><li><a href=&quot;http://siteanalytics.compete.com/polymtl.ca/&quot;>Siteanalytics</a> </li></ul>",
+	"evaluations" : " &nbsp; ",
+	"laboratoire" : "(13&nbsp;Jan.)<br> Labo 1 (B2)<br><br> "
+    },
+
+    {
+	"date" : " 21&nbsp;Jan ",
+	"transparents" : " <ul> <li class='exam'><a href=&quot;http://www.groupes.polymtl.ca/log2420/Seances/Processus/processus-h.pdf&quot;>Développement centré-utilisateur</a> (<a href=&quot;http://www.groupes.polymtl.ca/log2420/Seances/Processus/processus-b.pdf&quot;>texte</a>) </li><li class='exam'><a href=&quot;http://www.groupes.polymtl.ca/log2420/Seances/Processus/holis.pdf&quot;>Ex. Holis</a> &nbsp; </li></ul> ",
+	"documents" : "Lectures&nbsp;: <ul style=&quot;margin:0pt&quot;> <li class='exam'><a href=&quot;http://www.cse.chalmers.se/research/group/idc/ituniv/kurser/09/hcd/literatures/maguire%202001b%20UCD%20methods.pdf&quot;>Methods to support human-centred design</a> (Maguire, 2001b) </li><li class='exam'><a href=&quot;http://www.groupes.polymtl.ca/log2420/Exercices/Emilie/index.php&quot;>Emilie</a> </li><li>Détails de <a href=&quot;http://www.groupes.polymtl.ca/log2420/Tp/Protege/holis.pdf&quot;>Holis</a> </li><li><a href=&quot;http://www.groupes.polymtl.ca/log2420/Seances/Processus/Protege/commentaires-corrections-tp1-20073.pdf&quot;>Commentaires TP1</a> </li><li>Détails facultatifs&nbsp;: Respect <a href=&quot;http://www.groupes.polymtl.ca/log2420/Respect/5.3/index.html&quot;>(local)</a> <a href=&quot;http://www.groupes.polymtl.ca/log2420/Respect/respect3-3.pdf&quot;>(PDF)</a> </li><li class='exam'><a href=&quot;http://www.groupes.polymtl.ca/log2420/Seances/Processus/quiz.php&quot;>Quiz de rappel</a> </li></ul> <a href=&quot;http://www.groupes.polymtl.ca/log2420/Seances/GUI/compteur.zip&quot;>compteur.zip</a> ",
+	"evaluations" : "&nbsp; ",
+	"laboratoire" : " (22&nbsp;Jan.)<br> Labo 2 (B1)<br> <br> TD1"
+    },
+
+    {
+	"date" : " 28&nbsp;Jan ",
+	"transparents" : " <ul> <li class='exam'><a href=&quot;http://www.groupes.polymtl.ca/log2420/Seances/Conception1/conception1-h.pdf&quot;>Conception 1</a>  (<a href=&quot;http://www.groupes.polymtl.ca/log2420/Seances/Conception1/conception1-b.pdf&quot;>texte</a>)<br> </li></ul> ",
+	"documents" : " <ul> <li><a href=&quot;http://www.usask.ca/education/coursework/skaalid/theory/theory.htm&quot;>Gestalt</a> </li><li><a href=&quot;https://technirvanaa.wordpress.com/tag/windows-2-0/&quot;>Evolution Windows</a> [suite du texte omise pour les fins du TD]",
+	"evaluations" : " &nbsp; ",
+	"laboratoire" : " (27&nbsp;Jan.)<br> Labo 2 (B2)<br><br> "
+    },
+
+    {
+	"date" : "  4&nbsp;Feb ",
+	"transparents" : " <ul> <li class='exam'><a href=&quot;http://www.groupes.polymtl.ca/log2420/Seances/Conception2/conception2-h.pdf&quot;>Conception 2</a> (<a href=&quot;http://www.groupes.polymtl.ca/log2420/Seances/Conception2/conception2-b.pdf&quot;>texte</a>)<br> </li></ul> ",
+	"documents" : " <ul> <li>Exercices supplémentaires : <ul> <li class='exam'><a href=&quot;http://www.groupes.polymtl.ca/log2420/Exercices/FQRSC-MITACS/&quot;>Formulaire</a> </li><li class='exam'><a href=&quot;http://www.groupes.polymtl.ca/log2420/Seances/1/visual.htmcontent/faxset.php&quot;>Aptiva original</a>, <a href=&quot;http://www.groupes.polymtl.ca/log2420/Seances/1/Solutions/faxset.php&quot;>Aptiva revisité</a> </li></ul> </li><li class='exam'><a href=&quot;http://www.groupes.polymtl.ca/log2420/Exercices/Mapedit/mapedit2-32.zip&quot;>Exercice Mapedit</a><br><a href=&quot;http://www.groupes.polymtl.ca/log2420/Exercices/Mapedit/carte-udm.php&quot;>Carte UdM</a><br> <a href=&quot;http://www.groupes.polymtl.ca/log2420/Exercices/Mapedit/exemple.php&quot;>Exemple</a><br> <a href=&quot;http://www.groupes.polymtl.ca/log2420/Exercices/Mapedit/Inspection/inspection.php&quot;>Inspection</a> </li><li>Accès local&nbsp;:<a href=&quot;http://www.groupes.polymtl.ca/log2420/Documents/Smith_Mosier_guideline_.pdf&quot;>Smith et Mosier</a> (1986) </li></ul> ",
+	"evaluations" : " TD1<br> (remise&nbsp;4&nbsp;février, 11h55) ",
+	"laboratoire" : " ( 5&nbsp;Feb.)<br> Labo 3 (B1)<br><br> TD2 "
+    },
+
+    {
+	"date" : " 11&nbsp;Feb ",
+	"transparents" : " <ul> <li class='exam'><a href=&quot;http://www.groupes.polymtl.ca/log2420/Seances/Utilisabilite/utilisabilite-h.pdf&quot;>Principes de l&apos;utilisabilité</a> (<a href=&quot;http://www.groupes.polymtl.ca/log2420/Seances/Utilisabilite/utilisabilite-b.pdf&quot;>texte</a>) </li><li class='exam'><a href=&quot;http://www.groupes.polymtl.ca/log2420/Seances/Web/web-h.pdf&quot;> </a></li></ul><a href=&quot;http://www.groupes.polymtl.ca/log2420/Seances/Web/web-h.pdf&quot;> </a>",
+	"documents" : " <ul> <li class='exam'><a href=&quot;http://www.groupes.polymtl.ca/log2420/Seances/03/html-edit.png&quot;>Editeur html revu</a> </li><li><a href=&quot;http://www.microsoft.com/whdc/hwdev/windowsxp/downloads/default.mspx&quot;>Guide MS Windows XP</a> </li><li><a href=&quot;http://www.groupes.polymtl.ca/log2420/Eval/quiz-conception.php&quot; class='exam'>Quiz conception</a> </li><li class='exam'><a href=&quot;http://hal.inria.fr/inria-00070012/en/&quot;>Critères de Bastien et Scapin</a> (<a href=&quot;http://www.groupes.polymtl.ca/log2420/Documents/RT-0156.pdf&quot;>version locale</a>) </li><li class='exam'><a href=&quot;http://asktog.com/atc/principles-of-interaction-design/&quot;>Principes</a> de Tognazzini  </li><li class='exam'>Révision de <a href=&quot;http://www.groupes.polymtl.ca/log2420/Eval/log2420-intra-20153-sol.pdf&quot;>l&apos;intra</a> automne 2015</li> </ul> ",
+	"evaluations" : " &nbsp; ",
+	"laboratoire" : " (10&nbsp;Feb.)<br> Labo 3 (B2)<br><br> "
+    },
+
+    {
+	"date" : " 25&nbsp;Feb ",
+	"transparents" : " <ul> <li class='exam'>Interfaces Web (suite)</li> </ul> ",
+	"documents" : " <ul> <li class='exam'><a href=&quot;http://www.groupes.polymtl.ca/log2420/Seances/Web/menu.html&quot;>menu.html</a></li> <li class='exam'><a href=&quot;http://www.groupes.polymtl.ca/log2420/Seances/Web/jquery.html&quot;>jquery.html</a></li> <li class='exam'><a href=&quot;http://www.groupes.polymtl.ca/log2420/Seances/Web/menu-css.html&quot;>menu-css.html</a> (balise <a href=&quot;http://www.w3schools.com/css/css_float.asp&quot;><code>float</code></a>)</li> <li class='exam'><a href=&quot;http://www.groupes.polymtl.ca/log2420/Seances/Web/ResolutionDependantLayoutFr/exemple-un.html&quot;>Adaptation avec <code>media</code> (</a><a href=&quot;https://css-tricks.com/css-media-queries/&quot;>documentation</a>)</li> <li class='exam'><a href=&quot;http://www.groupes.polymtl.ca/log2420/Seances/Web/ng-bind-model.html&quot;>Modèle</a> de AngularJS </li><li class='exam'><a href=&quot;http://www.groupes.polymtl.ca/log2420/Exercices/Web/NG-menu/index.php&quot;>Exercices</a></li> </ul> ",
+	"evaluations" : "&nbsp; ",
+	"laboratoire" : " (24&nbsp;Feb.)<br> Labo 4 (B2)<br><br> "
+    },
+
+    {
+	"date" : "  3&nbsp;Mar ",
+	"transparents" : " ",
+	"documents" : " <i>Semaine de relâche</i> ",
+	"evaluations" : " &nbsp; ",
+	"laboratoire" : " &nbsp; "
+    },
+
+    {
+	"date" : " 10&nbsp;Mar",
+	"transparents" : " <ul> <li>Présentations des étudiants </li></ul> ",
+	"documents" : " <ul> <li>Présentations des étudiants du TP1 (Équipes paires&nbsp;: <span class=&quot;mdc&quot;>2, 4, 8, 10, 12) </span></li><li><a href=&quot;http://www.groupes.polymtl.ca/log2420/Tp/20153/assignationsTp2.php&quot;>Assignations équipes du TP2</a> </li></ul> ",
+	"evaluations" : " <li>TD2<br> (remise&nbsp;10&nbsp;mars, 11h55) </li>",
+	"laboratoire" : " (11&nbsp;Mar.)<br> Labo 5 (B1)<br><br> TD3 "
+    },
+
+    {
+	"date" : " 17&nbsp;Mar ",
+	"transparents" : " <ul> <li class='exam'><a href=&quot;http://www.groupes.polymtl.ca/log2420/Seances/Evaluation/evaluation-h.pdf&quot;>Évaluation d&apos;interfaces</a> (<a href=&quot;http://www.groupes.polymtl.ca/log2420/Seances/Evaluation/evaluation-b.pdf&quot;>texte</a>) </li><li>Présentations des étudiants </li></ul> ",
+	"documents" : " <ul> <li>Présentations des étudiants du TP1 (Équipes impaires&nbsp;:1, 5, 7, 9, 11)</li> <li>Exemple de test d&apos;utilisabilité tiré de Novell&nbsp;: <a href=&quot;http://www.groupes.polymtl.ca/log2420/Seances/Evaluations-interf/Subject18.ogg&quot;>trouver un fichier</a></li> <li><a href=&quot;http://www.ucc.ie/hfrg/questionnaires/sumi/&quot;>SUMI</a></li> <li class='exam'><a href=&quot;http://www.nngroup.com/articles/how-to-conduct-a-heuristic-evaluation/&quot;>Article sur les tests heuristiques</a></li> <li><a href=&quot;http://hcibib.org/perlman/question.html&quot;>Questionnaire de Perlman</a></li> </ul> ",
+	"evaluations" : " &nbsp; ",
+	"laboratoire" : " (16&nbsp;Mar.)<br> Labo 5 (B2)<br><br> "
+    },
+
+    {
+	"date" : " 24&nbsp;Mar ",
+	"transparents" : " <ul> <li class='exam'><a href=&quot;http://www.groupes.polymtl.ca/log2420/Seances/GUI/gui-h.pdf&quot;>Interfaces graphiques</a> (<a href=&quot;http://www.groupes.polymtl.ca/log2420/Seances/GUI/gui-b.pdf&quot;>texte</a>) </li></ul> ",
+	"documents" : " <ul> <li><a href=&quot;http://www.groupes.polymtl.ca/log2420/Seances/Boites/Exemples/&quot;>Exemples X11</a></li> <li><a href=&quot;http://www.groupes.polymtl.ca/log2420/Seances/Web/CompteurFenetre.form&quot;>CompteurFenetre.form</a></li> <li><a href=&quot;http://developer.mozilla.org/en/XUL_Tutorial&quot;>XUL</a></li> <li class='exam'><a href=&quot;http://www.groupes.polymtl.ca/log2420/Seances/Web/ExXul/aligner.png&quot;>aligner</a>, <a href=&quot;http://www.groupes.polymtl.ca/log2420/Seances/Web/ExXul/xulperiodictable.png&quot;>Survol des composants</a>, <a href=&quot;http://www.groupes.polymtl.ca/log2420/Seances/Web/ExXul/mybrowser.png&quot;>Fureteur</a> Pour rouler ces exemples, télécharger <a href=&quot;http://www.groupes.polymtl.ca/log2420/Seances/Web/ExXul.zip&quot;>le code</a> et utiliser la commande <code>firefox -app application.ini</code> de chaque répertoire correspondant.</li> <li class='exam'><a href=&quot;http://www.pebbles.hcii.cmu.edu/puc/&quot;>Commandes multi-usages</a></li> <li class='exam'><a href=&quot;http://www.groupes.polymtl.ca/log2420/Seances/Web/ng-text-area.html&quot;>Approche déclarative</a> AngularJS</li> <li class='exam'><a href=&quot;http://www.groupes.polymtl.ca/log2420/Seances/Web/quiz.php&quot;>Quiz Web</a> </li></ul> ",
+	"evaluations" : " <li><a href=&quot;http://www.groupes.polymtl.ca/log2420//Tp/20161/tp.php#Travail2&quot;>TP2</a> </li>",
+	"laboratoire" : " Aucun labo "
+    },
+
+    {
+	"date" : " 31&nbsp;Mar ",
+	"transparents" : " <ul> <li class='exam'><a href=&quot;http://www.groupes.polymtl.ca/log2420/Seances/Dev-recents/dev-recents-h.pdf&quot;>Développements actuels en IU</a> (<a href=&quot;http://www.groupes.polymtl.ca/log2420/Seances/Dev-recents/dev-recents-b.pdf&quot;>texte</a>) </li></ul> ",
+	"documents" : " <ul> <li><a href=&quot;http://www.youtube.com/watch?v=M0ODskdEPnQ&quot;>BumpTop</a></li> <li><a href=&quot;http://www.e-180.com/&quot;>Rencontres e-180</a></li> <li class='exam'><a href=&quot;http://www.groupes.polymtl.ca/log2420/Seances/Inter-intel/quiz.php&quot;>quiz</a> </li></ul> ",
+	"evaluations" : " &nbsp; ",
+	"laboratoire" : " (30&nbsp;Mar.)<br> Labo 6 (B2)<br><br> ( 1&nbsp;Apr.)<br> Labo 6 (B1)<br><br> "
+    },
+
+    {
+	"date" : "  7&nbsp;Apr ",
+	"transparents" : " <ul> <li class='exam'><a href=&quot;http://www.groupes.polymtl.ca/log2420/Seances/Dev-recents/arch-patrons.pdf&quot;>Patrons d&apos;utilisabilité</a></li> <li>Révision</li> </ul> ",
+	"documents" : " <p class='exam'>Un <a href=&quot;http://www.groupes.polymtl.ca/log2420/Eval/index.php&quot;>recueil</a> de plusieurs examens antérieurs est disponible pour fin de révision. </p> ",
+	"evaluations" : " TD3<br> (remise&nbsp;7&nbsp;avril, 11h55) ",
+	"laboratoire" : " Aucun labo "
+    },
+
+    {
+	"date" : " 14&nbsp;Apr ",
+	"transparents" : " ",
+	"documents" : " <i>Pas de cours</i><br>(journée de présentation des projets intégrateurs) ",
+	"evaluations" : " &nbsp; ",
+	"laboratoire" : " Aucun labo "
+    }
+]

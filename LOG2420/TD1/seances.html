@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="fr" ng-app="app">
+  <head>
+    <title>LOG2420 - Détails des séances</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Content-Language" content="fr-ca" />
+    <link rel="icon" href="img/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="seances.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+    <script src="seances.js"></script>
+  </head>
+  <body>
+      <table class="width100">
+          <tbody>
+              <tr>
+                  <td colspan="3">
+                      <table id="header">
+                          <tbody>
+                              <tr>
+                                  <td><a href="http://www.polymtl.ca/"><img alt="LOG2420" ismap="" src="img/poly.gif"></a></td>
+                                  <td>&nbsp;</td>
+                                  <td class="width100"><span>LOG2420, Analyse et conception d'interfaces utilisateur</span><br><span>Hiver 2016</span></td>
+                                  <td><a href="http://www.groupes.polymtl.ca/log2420/Seances/20161/index.php?&formatimp=o" class="impression"><img src="img/printer.png" />format impression</a></td>
+                              </tr>
+                          </tbody>
+                      </table>
+                  </td>
+              </tr>
+
+              <tr><td colspan="3"><img src="img/border.png" /></td></tr>
+
+              <tr id="content">
+                  <td>
+                      <table id="menuprincipal" class="width100" rules="none" frame="box" ng-controller="MenuController">
+                          <tbody>
+                              <!-- Les variables colspanLvl et type sont définies ici
+                              car j'ai considéré que ce n'était pas le rôle du controlleur
+                              de gérer du comportement d'affichage (i.e. colspan dans un tableau) -->
+                              <tr     ng-repeat="item in items"
+                                      ng-init="colspanLvl = !item.Niveau && '2' || '1';
+                                               type = item.Lien == 0 && 'title' || item.Nom == 'Séances' && 'selected' || 'nav';"
+                                      ng-attr-class="{{ item.Lien == 0 && 'title' }}">
+                                  <td ng-show="{{ item.Niveau }}" class="nav">&nbsp;</td>
+                                  <td ng-attr-colspan="{{ colspanLvl }}" ng-attr-class="{{ type }} width100">
+                                      <span ng-show="{{ item.Lien != 0 }}" ng-attr-class="{{ type }}">
+                                          <a ng-attr-class="{{ type }}" href="{{ item.Lien }}">{{ item.Nom }}</a>
+                                      </span>
+                                      <span ng-show="{{ item.Lien == 0 }}">{{ item.Nom }}</span>
+                                  </td>
+                              </tr>
+                          </tbody>
+                      </table>
+                      <a class="impression" href="http://www.groupes.polymtl.ca/log2420/Seances/20161/index.php?&formatimp=o"><img border="0" src="img/printer.png">format impression</a>
+                  </td>
+
+                  <td>&nbsp;</td>
+
+                  <td id="seancesBlock" colspan="1" ng-controller="SeancesController">
+                      <h1>Détails des séances</h1>
+                      <p><a href="http://www.groupes.polymtl.ca/log2420/Seances/20161/index.php?charge=o">Version</a> pour les chargés de cours.</p>
+                      <p class="bold">
+                          Attention: cette page et son contenu seront modifiés en cours de trimestre selon les besoins. Attendez à la semaine correspondante pour imprimer les transparents!
+                      </p>
+                      <p>Le détail de chaque séance de cours est fourni semaine par semaine.
+                          <br>
+                          <span ng-repeat="seance in seances"><!-- J'enlève le dernier élément du tableau -->
+                            <a ng-hide="{{ $index + 1 == seances.length }}" href="http:#{{ $index + 1 }}">{{ $index + 1 }}</a>
+                          </span>
+                      </p>
+                      <p></p>
+                      <ul><li class="exam">La matière à réviser pour les examens intra et final est indiquée par cette couleur de fond.</li></ul>
+
+                      <table class="special">
+                          <thead>
+                              <tr>
+                                  <th colspan="2">Semaine</th>
+                                  <th>Transparents</th>
+                                  <th class="width40">Documents</th>
+                                  <th>Évaluations</th>
+                                  <th>Laboratoire</th>
+                              </tr>
+                          </thead>
+
+                          <!-- La variable colspan est définie ici
+                          car j'ai considéré que ce n'était pas le rôle du controlleur
+                          de gérer du comportement d'affichage (i.e. colspan dans un tableau) -->
+                          <tbody>
+                              <tr ng-repeat="seance in seances" ng-init="colspan = seance.transparents == '' && 2 || 1" ng-attr-class="{{ colspan == 2 && 'bgGrey' || '' }}">
+                                  <td class="right"><a id="{{ $index + 1 }}"></a>{{ $index + 1 }}</td>
+                                  <td class="right" ng-bind-html="seance.date"></td>
+                                  <td class="transp" ng-hide="{{ colspan == 2 }}" ng-bind-html="seance.transparents"></td>
+                                  <td class="documents" ng-attr-colspan="{{ colspan }}" ng-attr-class="{{ colspan == 2 && 'Tcenter' }}" ng-bind-html="seance.documents"></td>
+                                  <td class="eval" ng-bind-html="seance.evaluations"></td>
+                                  <td class="lab" ng-bind-html="seance.laboratoire"></td>
+                              </tr>
+                          </tbody>
+                      </table>
+
+                      <p id="bottom" />
+                  </td>
+              </tr>
+          </tbody>
+      </table>
+  </body>
+</html>
